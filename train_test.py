@@ -90,13 +90,13 @@ def load_checkpoint(model, path):
 def train(data_folder, modelpath, testonly):
     test_inverval = 50
     if 'BRCA' in data_folder:
-        hidden_dim = [500]
+        hidden_dim = [1000]
         num_epoch = 2500
         lr = 1e-4
         step_size = 500
         num_class = 5
     elif 'ROSMAP' in data_folder:
-        hidden_dim = [300]
+        hidden_dim = [1000]
         num_epoch = 1000
         lr = 1e-4
         step_size = 500
